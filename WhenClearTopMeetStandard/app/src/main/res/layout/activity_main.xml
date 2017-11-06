@@ -9,8 +9,51 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="android.test.testapplication.MainActivity">
 
-    <TextView android:id="@+id/text"
+    <TextView
+        android:id="@+id/note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="「NOTE」This is a test with what will happen when launch a 'standard' activity with FLAG_CLEAR_TOP" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note"
+        android:text="「MainActivity」is first activity of this application" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:text="android:launchMode='singleTop'" />
+
+    <Button
+        android:id="@+id/launchA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="launch-A" />
+
+    <Button
+        android:id="@+id/launchB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launchA"
+        android:text="launch-B" />
+
+    <Button
+        android:id="@+id/launchC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launchB"
+        android:text="launch-C" />
+
+    <Button
+        android:id="@+id/launchD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launchC"
+        android:text="launch-D" />
 </RelativeLayout>
