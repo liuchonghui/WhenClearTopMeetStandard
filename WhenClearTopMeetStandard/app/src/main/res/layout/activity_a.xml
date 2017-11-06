@@ -13,34 +13,34 @@
         android:id="@+id/note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="「NOTE」This is a test with what will happen when launch a 'standard' activity with FLAG_CLEAR_TOP" />
+        android:text="「NOTE」A was launched with FLAG_CLEAR_TOP" />
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/note"
-        android:text="「MainActivity」is first activity of this application" />
+        android:text="「A」is being visible" />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/desc"
-        android:text="android:launchMode='singleTop'" />
+        android:text="android:launchMode='standard'" />
 
-    <TextView
-        android:id="@+id/timestamp"
+    <Button
+        android:id="@+id/launchMainActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text"
-        android:text="" />
+        android:text="launch-MainActivity" />
 
     <Button
         android:id="@+id/launchA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/timestamp"
+        android:layout_below="@+id/launchMainActivity"
         android:text="launch-A" />
 
     <TextView
@@ -49,29 +49,6 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/launchA"
         android:layout_toRightOf="@+id/launchA"
-        android:text="click to launch A" />
+        android:text="click to destroy current A and launch a new A" />
 
-    <Button
-        android:id="@+id/launchB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/launchA"
-        android:enabled="false"
-        android:text="launch-B" />
-
-    <Button
-        android:id="@+id/launchC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/launchB"
-        android:enabled="false"
-        android:text="launch-C" />
-
-    <Button
-        android:id="@+id/launchD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/launchC"
-        android:enabled="false"
-        android:text="launch-D" />
 </RelativeLayout>
